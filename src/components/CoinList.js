@@ -21,8 +21,29 @@ class CoinList extends Component {
     })
     return(
       <div className='body-container'>
+        {this.props.currentUser ?
+          <div className='right'>
+            <h3 className="h3">Watch List</h3>
+            <div className="scroll">
+              {this.props.list.map((listing, index) => {
+                return(
+                  <WatchList
+                    key={index}
+                    arrayIndex={index}
+                    currentUser={this.props.currentUser}
+                    listing={listing}
+                    handleDeleteWatchList={this.props.handleDeleteWatchList}
+                    currentArray='list'
+                    createdBy={this.props.createdBy}
+                  />
+                )
+              })}
+            </div>
+          </div>
+          : <div></div>
+        }
         <div className='left'>
-          <h3>Cryptocurrencies</h3>
+          <h3 className="h3">Top 1000 Coins by Market Cap</h3>
           <input
             type="text"
             placeholder="Search Coins"
@@ -39,24 +60,6 @@ class CoinList extends Component {
                   arrayIndex={index}
                   addToWatchList={this.props.addToWatchList}
                   createdBy={this.props.currentUser}
-                />
-              )
-            })}
-          </div>
-        </div>
-        <div className='right'>
-          <h3>Watch List</h3>
-          <div className="scroll">
-            {this.props.list.map((listing, index) => {
-              return(
-                <WatchList
-                  key={index}
-                  arrayIndex={index}
-                  currentUser={this.props.currentUser}
-                  listing={listing}
-                  handleDeleteWatchList={this.props.handleDeleteWatchList}
-                  currentArray='list'
-                  createdBy={this.props.createdBy}
                 />
               )
             })}

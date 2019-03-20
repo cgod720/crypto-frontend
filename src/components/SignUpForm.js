@@ -35,7 +35,7 @@ class SignUpForm extends Component {
 
   render(){
     return(
-      <div>
+      <div className="form">
         <form onSubmit={this.handleSignUpSubmit}>
           <input
             type="text"
@@ -49,7 +49,7 @@ class SignUpForm extends Component {
             onChange={this.handlePasswordChange}
             value={this.state.password}
           />
-          <button type="submit"><i className="fas fa-user-plus"></i></button>
+          <button type="submit" className="but"><i className="fas fa-user-plus"></i></button>
         </form>
       </div>
     )

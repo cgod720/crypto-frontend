@@ -5,7 +5,7 @@ class Articles extends Component {
     return(
       <div className='news-container'>
         <div className='article-container'>
-          <a href={this.props.article.url}>{this.props.article.title}</a>
+          <a href={this.props.article.url} className="title">{this.props.article.title}</a>
           <a href={this.props.article.url}>
             <img src={this.props.article.urlToImage} alt={this.props.article.title}/>
           </a>

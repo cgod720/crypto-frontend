@@ -31,7 +31,7 @@ class LogInForm extends Component {
   }
   render(){
     return(
-      <div>
+      <div className="form">
         {!this.props.currentUser ?
           <form onSubmit={this.handleLogSubmit}>
             <input
@@ -46,7 +46,7 @@ class LogInForm extends Component {
               onChange={this.handleLogPassChange}
               value={this.state.password}
             />
-            <button type="submit"><i className="fas fa-sign-in-alt"></i></button>
+            <button type="submit" className="but"><i className="fas fa-sign-in-alt"></i></button>
           </form>
            : <div>{this.props.handleView('none')}</div>
         }

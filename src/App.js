@@ -232,6 +232,8 @@ class App extends Component {
           handleView={this.handleView}
           currentUser={this.state.currentUser}
           handleDeleteSession={this.handleDeleteSession}
+          handleCreateUser={this.handleCreateUser}
+          handleCreateSession={this.handleCreateSession}
         />
         {this.state.currentView === 'signup' ?
         <SignUpForm

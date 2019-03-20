@@ -4,19 +4,20 @@ class Header extends Component {
   render(){
     return(
       <div className="header">
-        <span className='headline' onClick={() => {this.props.handleView('none')}}>CRYPTO<i className="fas fa-globe" id="spin"></i>SPHERE</span>
+        <h1 className='headline' onClick={() => {this.props.handleView('none')}}>CRYPTO<i className="fas fa-globe" id="spin"></i>SPHERE</h1>
         {this.props.currentUser ?
           <span>
-            <button  className='signLogButtons' onClick={() => {this.props.handleDeleteSession(this.props.currentUser)}}>Log Out</button>
-            <span className='welcome'>Welcome, {this.props.currentUser}!</span>
+            <span className="welcome">Welcome, {this.props.currentUser}!</span>
+            <br/>
+            <button className='signLogButtons' onClick={() => {this.props.handleDeleteSession(this.props.currentUser)}}>Log Out</button>
           </span> :
           <span></span>
         }
         {!this.props.currentUser ?
-          <span>
-            <button className='signLogButtons' onClick={() => {this.props.handleView('signup')}}>Sign Up</button>
+          <div>
             <button className='signLogButtons' onClick={() => {this.props.handleView('login')}}>Log In</button>
-          </span> :
+            <button className='signLogButtons' onClick={() => {this.props.handleView('signup')}}>Sign Up</button>
+          </div> :
           <span></span>
         }
       </div>

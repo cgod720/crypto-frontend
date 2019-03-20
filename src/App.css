@@ -1,38 +1,57 @@
 .headline {
-  color: red;
-  font-size: 35px;
+  color: rgb(0, 255, 248);
+  font-size: 55px;
+  font-family: 'Vesper Libre', 'serif';
+  margin-right: 7px;
 }
 
-/* .App {
+body {
+  background: url("http://thecryptomastermind.com/wp-content/uploads/2018/10/bitcoin-wallpapers-2560x1440-full-hd.jpg")
+}
+
+.App {
   text-align: center;
-} */
+}
 
 .header {
   margin-top: 0px;
-  /* background: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/rbGMAGytlGjahhgrii/videoblocks-abstract-geometrical-background-with-moving-lines-and-dots-looping-cg-animation-4k-suitable-for-cryptocurrency-financial-social-background_sqd9ffwig_thumbnail-full01.png"); */
   height: 200px;
 }
 
 .body-container {
-  display: flex;
+  /* display: flex; */
   margin-bottom: 20px;
+  margin-top: 80px;
 }
 
 .left {
+  margin: 0 auto;
   width: 50%;
   text-align: center;
-  border: 1px solid black;
+  border: 2px solid rgb(0, 255, 248);
+  background-color: black;
+  margin-bottom: 10px;
+  border-radius: 20px;
 }
 
 .scroll {
   overflow: scroll;
-  height: 200px;
+  height: 300px;
+  color: rgb(255, 0, 220);
+  font-family: 'Vesper Libre', 'serif';
+  font-size: 18px;
 }
 
 .right {
+  margin: 0 auto;
   width: 50%;
   text-align: center;
-  border: 1px solid black;
+  border: 2px solid rgb(0, 255, 248);
+  background-color: black;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  height: 300px;
+  overflow: scroll;
 }
 
 .articles-container {
@@ -68,20 +87,23 @@ a {
   width: 60px;
   height: 30px;
   border-radius: 5px;
-  margin-right: 10px;
-  float: right;
-  margin-top: 3px;
+  margin: 5px;
+  text-align: center;
+  display: inline-block;
+  border-color: rgb(0, 255, 248);
+  font-family: 'Vesper Libre', 'serif';
+  font-size: 12px;
+  padding-top: 4px;
 }
 
 .signLogButtons:hover {
-  background-color: blue;
+  background-color: rgb(0, 255, 248);
 }
 
 .welcome {
-  float: right;
-  font-family: 'Cinzel', 'serif';
-  margin-right: 50px;
-  font-size: 30px;
+  font-family: 'Vesper Libre', 'serif';
+  font-size: 40px;
+  color: rgb(0, 255, 248);
 }
 
 .coin-search {
@@ -99,4 +121,45 @@ a {
   100% {
     transform: rotate(359deg);
   }
+}
+
+.form {
+  margin-bottom: 50px;
+
+}
+
+input {
+  height: 20px;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+.but {
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.h3 {
+  font-size: 25px;
+  color: rgb(0, 255, 248);
+  font-family: 'Vesper Libre', 'serif';
+}
+
+.title {
+  color: rgb(0, 255, 248);
+  font-family: 'Vesper Libre', 'serif';
+}
+
+.title:hover {
+  text-decoration: underline;
+}
+
+.addDelete {
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.addDelete:hover {
+  background-color: rgb(0, 255, 248);
+  border-radius: 5px;
 }
