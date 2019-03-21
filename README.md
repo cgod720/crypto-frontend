@@ -1,4 +1,4 @@
-##Crypto Sphere
+# Crypto Sphere
 
 This is the front end repository for the Crypto Sphere application. This application was built using 
 the MERN stack and in this repo the code for the React and Node.js portion of the code is within.
