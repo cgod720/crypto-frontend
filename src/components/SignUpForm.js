@@ -44,7 +44,7 @@ class SignUpForm extends Component {
             value={this.state.username}
           />
           <input
-            type="text"
+            type="password"
             placeholder="Password"
             onChange={this.handlePasswordChange}
             value={this.state.password}

@@ -41,7 +41,7 @@ class LogInForm extends Component {
               value={this.state.username}
             />
             <input
-              type='text'
+              type='password'
               placeholder='Password'
               onChange={this.handleLogPassChange}
               value={this.state.password}
