@@ -137,6 +137,7 @@ input {
 .but {
   font-size: 18px;
   border-radius: 5px;
+  margin: 0 auto;
 }
 
 .h3 {
@@ -203,13 +204,15 @@ input {
   .title {
     font-size: 20px;
   }
-  .fa-eye, .fa-trash-alt, .fa-sign-in-alt, .fa-user-plus {
+  .fa-eye, .fa-trash-alt, .fa-sign-in-alt, .fa-user-plus, .but {
     background-color: lightgrey;
-    width: 25px;
-    height: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
+  }
+  .fa-eye, .fa-trash-alt {
+    width: 25px;
+    height: 20px;
   }
 }
