@@ -176,6 +176,8 @@ input {
   }
   .signLogButtons {
     background-color: lightgrey;
+    font-size: 14px;
+    width: 100px;
   }
   .form {
     margin: 0 auto;
@@ -201,7 +203,7 @@ input {
   .title {
     font-size: 20px;
   }
-  .fa-eye, .fa-trash-alt {
+  .fa-eye, .fa-trash-alt, .fa-sign-in-alt, .fa-user-plus {
     background-color: lightgrey;
     width: 25px;
     height: 20px;
