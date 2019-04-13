@@ -49,6 +49,7 @@ class SignUpForm extends Component {
             onChange={this.handlePasswordChange}
             value={this.state.password}
           />
+          <br/>
           <button type="submit" className="but"><i className="fas fa-user-plus"></i></button>
         </form>
       </div>

@@ -5,6 +5,7 @@ import SignUpForm from './components/SignUpForm'
 import LogInForm from './components/LogInForm'
 import CoinList from './components/CoinList'
 import News from './components/News'
+import Filler from './components/Filler'
 
 class App extends Component {
   constructor(props){
@@ -251,6 +252,7 @@ class App extends Component {
         <div></div>
         }
         </span>
+        <Filler/>
         <CoinList
           coins={this.state.coins}
           currentUser={this.state.currentUser}

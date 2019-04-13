@@ -4,7 +4,7 @@ class WatchList extends Component {
   constructor(props){
     super(props)
     this.state = {
-      createdBy: this.props.currentUser.id,
+      createdBy: this.props.currentUser._id,
     }
   }
 

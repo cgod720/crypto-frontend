@@ -14,7 +14,7 @@ class Header extends Component {
           <span></span>
         }
         {!this.props.currentUser ?
-          <div>
+          <div className="formButtons">
             <button className='signLogButtons' onClick={() => {this.props.handleView('login')}}>Log In</button>
             <button className='signLogButtons' onClick={() => {this.props.handleView('signup')}}>Sign Up</button>
           </div> :
