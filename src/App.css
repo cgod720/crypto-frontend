@@ -173,6 +173,8 @@ input {
   .formButtons {
     margin-top: 75px;
     margin-bottom: 500px;
+  }
+  .signLogButtons {
     background-color: lightgrey;
   }
   .form {
@@ -189,8 +191,9 @@ input {
   .news-container {
     display: block;
     margin: 0 auto;
-    margin-bottom: 270px;
-    width: 50%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 80%;
   }
   .article-container {
     margin-bottom: 100px;
