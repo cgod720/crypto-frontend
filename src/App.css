@@ -165,9 +165,7 @@ input {
   border-radius: 5px;
 }
 
-.filler {
-  height: 60px;
-}
+
 
 
 @media (max-width: 900px) {
@@ -214,5 +212,8 @@ input {
   .fa-eye, .fa-trash-alt {
     width: 25px;
     height: 20px;
+  }
+  .filler {
+    height: 60px;
   }
 }
